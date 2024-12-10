@@ -1,0 +1,137 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  z-index: -2;
+}
+
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
+}
+
+@media (max-width: 940px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+  .card {
+    margin: 5px;
+  }
+
+  .card-img {
+    width: 9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+    font-size: 12px;
+  }
+  
+  .card-reviews {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  
+  .rating-star {
+    color: #d5ab55;
+    font-size: 11px;
+  }
+  
+  .total-reviews {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    font-size: 11px;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 549px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 6.0rem;
+    margin-top: 0.5rem;
+  }
+  .card {
+    margin: 1px;
+  }
+
+  .card-img {
+    width: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    margin-bottom: 0.6rem;
+    font-size: 6.9px;
+  }
+  
+  .card-reviews {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  
+  .rating-star {
+    color: #d5ab55;
+    font-size: 7px;
+  }
+  
+  .total-reviews {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    font-size: 7px;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,29 @@
+.price-title {
+    margin-top: 20px;
+  }
+  
+  .ml {
+    margin-left: 20px;
+  }
+   
+  @media (max-width: 940px) {
+    .price-title {
+      margin-top: 25px;
+      margin-bottom: 17px;
+    }
+    
+    .ml {
+      margin-left: 3px;
+    }
+  } 
+
+  @media (max-width: 549px) {
+    .price-title {
+      margin-top: 25px;
+      margin-bottom: 17px;
+    }
+    
+    .ml {
+      margin-left: 0px;
+    }
+  } 
