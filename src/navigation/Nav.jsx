@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { FiHeart } from "react-icons/fi";
-import { FaSearch } from "react-icons/fa";
+import { FaHome, FaSearch } from "react-icons/fa";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
 
@@ -15,24 +16,30 @@ const Nav = ({ handleInputChange, query }) => {
 
   return (
     <nav>
-      <div className="nav-container"
-          onClick={handleClick}
-          >
-           {showInput ? (
-        <input type="text" placeholder="Search..." onChange={handleInputChange} value={query} />
-      ) : (
-        <FaSearch onClick={() => setShowInput(true)} />
-      )}
+      <Link to="/">
+        <FaHome className="home-icon"/>
+      </Link>
+      <div onClick={handleClick}>
+        {showInput ? (
+          <input
+            type="text"
+            placeholder="Search..."
+            onChange={handleInputChange}
+            value={query}
+          />
+        ) : (
+          <FaSearch onClick={() => setShowInput(true)} />
+        )}
       </div>
       <div className="profile-container">
         <a href="#">
-          <FiHeart className="nav-icons" />
+          <FiHeart className="nav-icon" />
         </a>
         <a href="">
-          <AiOutlineShoppingCart className="nav-icons" />
+          <AiOutlineShoppingCart className="nav-icon" />
         </a>
         <a href="">
-          <AiOutlineUserAdd className="nav-icons" />
+          <AiOutlineUserAdd className="nav-icon" />
         </a>
       </div>
     </nav>
